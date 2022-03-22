@@ -4,6 +4,8 @@
 #Single underscore implies that the data member is nonpublic
 
 #Example: Multidimensional Vector Class
+import copy
+
 
 class Vector:
     """Represents a vector in a multidimensional space."""
@@ -39,5 +41,31 @@ class Vector:
         return '<' + str(self._coords)[1:-1] + '>'
 
 #Iterators
+#__next__ and __iter__ methods
 
+#Inheritance
+#class className(superclass)
+#use super(). method to initialize an instance of a subclass
 
+#Hierarchy of Numeric Progressions
+#Arithmetic Progression and Geometric Progressions
+
+"""
+A metaclass offers a template for the class definition itself 
+"""
+
+"""
+Namespaces and Object-Orientation 
+A namespace is an abstraction that manages all of the identifiers that are defined in a particular scope 
+"""
+
+"""
+Nested Classes:
+
+"""
+
+#Deep Copying
+
+warmTones = ['orange' 'brown']
+
+palette = copy.deepcopy(warmtones)
