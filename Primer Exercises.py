@@ -34,14 +34,3 @@ for i in range(50,80,10):
 #C.1.14
 a = [2,212,24,534,26,63,65]
 
-def odds(a):
-
-    for j in range(1,len(a)):
-        if a[0]*a[j] % 2 == 1:
-            print('The numbers ' + str(a[0]) + ' and ' + str(a[j]) + ' work')
-            quit()
-        elif a[0]*a[j] % 2 == 0 and j != len(a)+1:
-            continue
-        else:
-            print("No")
-print(odds(a))
