@@ -32,5 +32,24 @@ for i in range(50,80,10):
     print(i)
 
 #C.1.14
-a = [2,212,24,534,26,63,65]
+a = [1,212,24,534,26,63,65]
+
+def odd_count(n):
+    odd_count = 0
+    i = 0
+    while i < len(n):
+        if n[i] % 2 == 1:
+            odd_count += 1
+            i += 1
+        else:
+            i += 1
+    print(odd_count)
+
+    if odd_count >= 2:
+        print("Yes, there are at least two odds")
+    else:
+        print("No")
+
+odd_count([1,2,3])
+
 
