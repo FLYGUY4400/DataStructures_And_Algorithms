@@ -53,3 +53,15 @@ def odd_count(n):
 odd_count([1,2,3])
 
 
+#C-1.23
+
+def list_insert(a,n,i):
+    if i > len(a)-1:
+        raise TypeError("Don't try buffer overflow attacks in Python!")
+    else:
+        a[i] = n
+    print(a)
+
+print(list_insert([1,2,3],3,4))
+
+
