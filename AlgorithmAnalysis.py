@@ -32,4 +32,55 @@ This is often used to characterize running times and space bounds
 We can ignore constant factors and lower-order terms 
 """
 
-#stopped on page 127
+"""
+Big-Omega Notation 
+Greater than or equal. Opposite of big-oh notation 
+
+"""
+
+"""
+Big Theta 
+Two functions grow at the same rate up to constant factors 
+c'g(n) <= f(n) <= c''g(n,  for n >= n0 
+"""
+
+#O(1) time is constant runtime that doesn't depend on n
+
+"""
+If we are trying to find the max of a list that is in random order, the expected number of
+times we update the biggest is H_n = \sum_j=1^n 1/j 
+This is known as the nth Harmonic Number 
+"""
+
+#Example of prefix averages
+
+#A Quadratic-Time Algorithm
+def prefix_average1(S):
+    n = len(S)
+    A = [0]*n
+    for j in range(n):
+        total = 0
+        for i in range(j+1):
+            total+=S[i]
+        A[j] = total/(j+1)
+    return A
+
+
+def prefix_average2(S):
+    n = len(S)
+    A = [0]*n
+    for j in range(n):
+        A[j] = sum(S[0:j+1])/(j+1)
+    return A
+
+#Linear Time
+def prefix_average3(S):
+    n = len(S)
+    A = [0]*n
+    total = 0
+    for j in range(n):
+        total+=S[j]
+        A[j] = total/(j+1)
+    return A
+#This runs in linear time because the prefix sum is not computed anew for each iteration of j
+
