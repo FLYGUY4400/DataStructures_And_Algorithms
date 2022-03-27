@@ -22,6 +22,4 @@ a = [2,2,3,67,233,654,12,78,35]
 
 #We want this to find the min and max on at most 12 comparisons
 
-print(list(set(a)))
-
 
